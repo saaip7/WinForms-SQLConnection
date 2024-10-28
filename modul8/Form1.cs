@@ -164,6 +164,10 @@ namespace modul8
                 }
         }
 
-
+        private void btn_qr_Click(object sender, EventArgs e)
+        {
+            Form f2 = new Form2(this);
+            f2.Show();
+        }
     }
 }

@@ -40,6 +40,7 @@
             btnDelete = new Button();
             dgvData = new DataGridView();
             btnLoadData = new Button();
+            btn_qr = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             SuspendLayout();
             // 
@@ -108,7 +109,7 @@
             // 
             // btnInsert
             // 
-            btnInsert.Location = new Point(388, 67);
+            btnInsert.Location = new Point(367, 67);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(92, 87);
             btnInsert.TabIndex = 7;
@@ -118,7 +119,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(513, 67);
+            btnUpdate.Location = new Point(465, 67);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(92, 87);
             btnUpdate.TabIndex = 8;
@@ -128,7 +129,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(636, 67);
+            btnDelete.Location = new Point(563, 68);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(92, 87);
             btnDelete.TabIndex = 9;
@@ -142,14 +143,14 @@
             dgvData.Location = new Point(22, 176);
             dgvData.Name = "dgvData";
             dgvData.RowTemplate.Height = 25;
-            dgvData.Size = new Size(706, 259);
+            dgvData.Size = new Size(727, 259);
             dgvData.TabIndex = 10;
             dgvData.CellClick += dgvData_CellClick;
             dgvData.CellContentClick += dgvData_CellContentClick;
             // 
             // btnLoadData
             // 
-            btnLoadData.Location = new Point(599, 454);
+            btnLoadData.Location = new Point(620, 454);
             btnLoadData.Name = "btnLoadData";
             btnLoadData.Size = new Size(129, 39);
             btnLoadData.TabIndex = 11;
@@ -157,11 +158,22 @@
             btnLoadData.UseVisualStyleBackColor = true;
             btnLoadData.Click += btnLoadData_Click;
             // 
+            // btn_qr
+            // 
+            btn_qr.Location = new Point(661, 69);
+            btn_qr.Name = "btn_qr";
+            btn_qr.Size = new Size(88, 83);
+            btn_qr.TabIndex = 12;
+            btn_qr.Text = "Generate QR";
+            btn_qr.UseVisualStyleBackColor = true;
+            btn_qr.Click += btn_qr_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(759, 505);
+            ClientSize = new Size(779, 505);
+            Controls.Add(btn_qr);
             Controls.Add(btnLoadData);
             Controls.Add(dgvData);
             Controls.Add(btnDelete);
@@ -188,13 +200,14 @@
         private Label lblNama;
         private Label lblAlamat;
         private Label lblNoHandphone;
-        private TextBox txtName;
-        private TextBox txtAlamat;
-        private TextBox txtNo_handphone;
         private Button btnInsert;
         private Button btnUpdate;
         private Button btnDelete;
         private DataGridView dgvData;
         private Button btnLoadData;
+        private Button btn_qr;
+        public TextBox txtName;
+        public TextBox txtAlamat;
+        public TextBox txtNo_handphone;
     }
 }
